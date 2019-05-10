@@ -179,19 +179,30 @@ p {
 /* ==== HEADER ==== */
 
 .header {
-	background: #000;
-	padding: 2rem 0;
+	background: transparent;
+	padding: 1.5rem 0;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 999;
+	z-index: 99;
+	transition: .6s;
+}
+
+.header.active {
+	background-color: var(--black-color);
+	padding: 1.5rem;
+	border-bottom: 2px solid var(--pink-color);
 }
 
 .flex-wrapper {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+}
+
+.logo,
+.nav {
+	display: none;
 }
 
 .nav {
@@ -222,6 +233,58 @@ p {
 	color: var(--pink-color);
 }
 
+/* HAMBURGER ICON */
+
+.nav-icon {
+	width: 40px;
+	height: 26px;
+	position: relative;
+	margin-left: auto;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	cursor: pointer;
+}
+
+.nav-icon span {
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background: var(--fair-grey);
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+}
+
+.nav-icon-1 {
+  	top: 0px;
+}
+
+.nav-icon-2 {
+  	top: 11px;
+}
+
+.nav-icon-3 {
+  	top: 22px;
+}
+
+.nav-icon.active .nav-icon-1 {
+	top: 12px;
+	transform: rotate(135deg);
+}
+
+.nav-icon.active .nav-icon-2 {
+	opacity: 0;
+	left: -100%;
+}
+
+.nav-icon.active .nav-icon-3 {
+	top: 12px;
+	transform: rotate(-135deg);
+}
+
 /* ==== JUMBOTRON ==== */
 
 .jumbotron {
@@ -229,7 +292,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: #000 url("images/jumbotron_bg.jpg") no-repeat 0/cover;
+	background: #000 url("../images/jumbotron_bg.jpg") no-repeat 0/cover;
 	position: relative;
 }
 
@@ -292,7 +355,7 @@ p {
 
 .quotes {
 	padding: 12rem 0;
-	background: #fff url("images/background-2_02.jpg") no-repeat 0/cover;
+	background: #fff url("../images/background-2_02.jpg") no-repeat 0/cover;
 }
 
 .quotes-box {
@@ -520,7 +583,7 @@ p {
 /* ==== FEATURE ==== */
 
 .feature {
-	background: #000 url("images/background-1.jpg") no-repeat 0/cover;
+	background: #000 url("../images/background-1.jpg") no-repeat 0/cover;
 	padding: 8rem 0;
 }
 
@@ -574,10 +637,40 @@ p {
 /* ===== MEDIA QUERIES ===== */
 /* ======================== */
 
+
 @media (min-width: 48em) {
 	html {
 		font-size: 55%;
 	}
+
+	.header {
+		padding: 3rem;
+	}
+
+	.header.active {
+		padding: 1.5rem;
+	}
+
+	.flex-wrapper {
+		flex-direction: unset;
+		justify-content: space-between;
+    	align-items: center;
+	}
+
+	.nav,
+	.logo {
+		display: block;
+	}
+
+	.nav {
+		margin-top: 0;
+	}
+
+	.mobile__wrapper,
+	.nav-icon {
+		display: none;
+	}
+	
 }
 
 @media (min-width: 62em) {
@@ -619,10 +712,6 @@ p {
 }
 
 @media (min-width: 75em) {
-	/*.header {
-		padding: 4rem 0;
-	}*/
-
 	.intro {
 		padding: 14rem 0;
 	}

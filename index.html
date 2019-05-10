@@ -7,8 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700,900" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="grid.css">
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/grid.css">
+		<link rel="stylesheet" type="text/css" href="css/mobile-nav.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
 
@@ -23,29 +24,34 @@
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a href="" class="nav__link nav__link--active">Home</a>
+								<a href="#home" class="nav__link nav__link--active">Home</a>
 							</li>
 							<li class="nav__item">
-								<a href="" class="nav__link">About Us</a>
+								<a href="#services" class="nav__link">Services</a>
 							</li>
 							<li class="nav__item">
-								<a href="" class="nav__link">Services</a>
+								<a href="#prices" class="nav__link">Prices</a>
 							</li>
 							<li class="nav__item">
-								<a href="" class="nav__link">Prices</a>
+								<a href="#news" class="nav__link">News</a>
 							</li>
 							<li class="nav__item">
-								<a href="" class="nav__link">Contact</a>
+								<a href="#download" class="nav__link">Download</a>
 							</li>
 						</ul>
 					</nav>
+					<div id="navIcon" class="nav-icon">
+						<span class="nav-icon-1"></span>
+						<span class="nav-icon-2"></span>
+						<span class="nav-icon-3"></span>
+					</div>
 				</div>
 			</div>
 		</header>
 
 		<!-- JUMBOTRON -->
 
-		<div class="jumbotron">
+		<div id="home" class="jumbotron">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-bg-8 col-bg-2-offset">
@@ -87,7 +93,7 @@
 
 			<!-- SECTION SERVICES -->
 
-			<section class="services">
+			<section id="services" class="services">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-bg-8 col-bg-2-offset">
@@ -150,7 +156,7 @@
 
 			<!-- SECTION PRICES -->
 
-			<section class="prices grey-bg">
+			<section id="prices" class="prices grey-bg">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-bg-8 col-bg-2-offset">
@@ -249,7 +255,7 @@
 
 			<!-- SECTION INFO -->
 
-			<section class="info">
+			<section id="about" class="info">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-sm-6 col-xl-4">
@@ -341,7 +347,7 @@
 
 			<!-- SECTION NEWS -->
 
-			<section class="news">
+			<section id="news" class="news">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-bg-8 col-bg-2-offset">
@@ -465,7 +471,7 @@
 
 			<!-- SECTION DOWNLOAD -->
 
-			<section class="download">
+			<section id="download" class="download">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-bg-6">
@@ -500,6 +506,44 @@
 				</div>
 			</div>
 		</footer>
-	
+
+
+		<!-- MOBILE NAVIGATION -->
+
+		<div id="mobile-nav" class="mobile__wrapper">
+			<a href="index.html" class="mobile__logo">
+				<img src="images/logo_03.png" class="logo__img img-fluid">
+			</a>
+			<nav class="mobile__nav">
+				<ul class="mobile__list">
+					<li class="mobile__item">
+						<a href="" class="nav__link nav__link--active">Home</a>
+					</li>
+					<li class="mobile__item">
+						<a href="" class="nav__link">About Us</a>
+					</li>
+					<li class="mobile__item">
+						<a href="" class="nav__link">Services</a>
+					</li>
+					<li class="mobile__item">
+						<a href="" class="nav__link">Prices</a>
+					</li>
+					<li class="mobile__item">
+						<a href="" class="nav__link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- DARK OVERLAY -->
+
+		<div class="overlay"></div>
+
+
+		<!-- JS FILES -->
+
+		<script src="js/jquery-3.4.1.js"></script>
+		<script src="js/script.js"></script>
+
 	</body>
 </html>
