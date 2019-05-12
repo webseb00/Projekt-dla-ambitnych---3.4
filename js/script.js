@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+	// trigger slick slider plugin
+
+	$('.quotes-slider').slick({
+		dots: false,
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 4000
+	});
+
 	// mobile menu, overlay, hamburger icon
 
 	$('#navIcon').click(function() {

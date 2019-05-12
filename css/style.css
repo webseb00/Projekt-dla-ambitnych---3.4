@@ -633,6 +633,12 @@ p {
 	text-align: right;
 }
 
+/* ==== SLICK SLIDER STYLES MODIFIED ==== */
+
+.slick-initialized .slick-slide {
+	outline: none;
+}
+
 /* ========================== */
 /* ===== MEDIA QUERIES ===== */
 /* ======================== */

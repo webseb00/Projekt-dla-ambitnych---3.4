@@ -9,6 +9,8 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/grid.css">
 		<link rel="stylesheet" type="text/css" href="css/mobile-nav.css">
+		<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -24,7 +26,7 @@
 					<nav class="nav">
 						<ul class="nav__list">
 							<li class="nav__item">
-								<a href="#home" class="nav__link nav__link--active">Home</a>
+								<a href="#home" class="nav__link">Home</a>
 							</li>
 							<li class="nav__item">
 								<a href="#services" class="nav__link">Services</a>
@@ -140,14 +142,34 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-xl-10 col-xl-1-offset">
-							<div class="quotes-box">
-								<i class="fa fa-quote-left quotes-box__icon" aria-hidden="true"></i>
-								<p class="quotes-box__cite">
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit, std do eiusmod tempor
-									incididunt ut labore tet dolore magna aliqua. Ut enim ad minim veniam,
-									quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
-								</p>
-								<i class="fa fa-quote-right quotes-box__icon" aria-hidden="true"></i>
+							<div class="quotes-slider">
+								<div class="quotes-box">
+									<i class="fa fa-quote-left quotes-box__icon" aria-hidden="true"></i>
+									<p class="quotes-box__cite">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, std do eiusmod tempor
+										incididunt ut labore tet dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+									</p>
+									<i class="fa fa-quote-right quotes-box__icon" aria-hidden="true"></i>
+								</div>
+								<div class="quotes-box">
+									<i class="fa fa-quote-left quotes-box__icon" aria-hidden="true"></i>
+									<p class="quotes-box__cite">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, std do eiusmod tempor
+										incididunt ut labore tet dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+									</p>
+									<i class="fa fa-quote-right quotes-box__icon" aria-hidden="true"></i>
+								</div>
+								<div class="quotes-box">
+									<i class="fa fa-quote-left quotes-box__icon" aria-hidden="true"></i>
+									<p class="quotes-box__cite">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, std do eiusmod tempor
+										incididunt ut labore tet dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+									</p>
+									<i class="fa fa-quote-right quotes-box__icon" aria-hidden="true"></i>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -517,19 +539,19 @@
 			<nav class="mobile__nav">
 				<ul class="mobile__list">
 					<li class="mobile__item">
-						<a href="" class="nav__link nav__link--active">Home</a>
+						<a href="#home" class="nav__link">Home</a>
 					</li>
 					<li class="mobile__item">
-						<a href="" class="nav__link">About Us</a>
+						<a href="#services" class="nav__link">Services</a>
 					</li>
 					<li class="mobile__item">
-						<a href="" class="nav__link">Services</a>
+						<a href="#prices" class="nav__link">Prices</a>
 					</li>
 					<li class="mobile__item">
-						<a href="" class="nav__link">Prices</a>
+						<a href="#news" class="nav__link">News</a>
 					</li>
 					<li class="mobile__item">
-						<a href="" class="nav__link">Contact</a>
+						<a href="#download" class="nav__link">Download</a>
 					</li>
 				</ul>
 			</nav>
@@ -542,7 +564,8 @@
 
 		<!-- JS FILES -->
 
-		<script src="js/jquery-3.4.1.js"></script>
+		<script src="vendor/jquery-3.4.1.js"></script>
+		<script src="vendor/slick.min.js"></script>
 		<script src="js/script.js"></script>
 
 	</body>
