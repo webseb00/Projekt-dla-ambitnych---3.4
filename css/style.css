@@ -488,6 +488,10 @@ p {
 	margin-bottom: 3rem;
 }
 
+.info-box__aside {
+	height: 60px;
+}
+
 .info-box__content {
 	text-align: center;
 }
@@ -644,6 +648,12 @@ p {
 
 .slick-initialized .slick-slide {
 	outline: none;
+}
+
+.slick-prev,
+.slick-next {
+	width: 25px;
+	height: 40px;
 }
 
 .slick-prev::before,
