@@ -221,6 +221,7 @@ p {
 	font-weight: 700;
 	text-decoration: none;
 	transition: color .4s linear;
+	outline: none;
 }
 
 .nav__link--active {
@@ -356,6 +357,12 @@ p {
 .quotes {
 	padding: 12rem 0;
 	background: #fff url("../images/background-2_02.jpg") no-repeat 0/cover;
+}
+
+.quotes-slider {
+	max-width: 800px;
+	height: 100%;
+	margin: 0 auto;
 }
 
 .quotes-box {
@@ -639,6 +646,20 @@ p {
 	outline: none;
 }
 
+.slick-prev::before,
+.slick-next::before {
+	font-family: 'Font Awesome\ 5 Free';
+	font-weight: 900;
+}
+
+.slick-prev::before {
+	content: '\f053';
+}
+
+.slick-next::before {
+	content: '\f054';
+}
+
 /* ========================== */
 /* ===== MEDIA QUERIES ===== */
 /* ======================== */
@@ -675,6 +696,11 @@ p {
 	.mobile__wrapper,
 	.nav-icon {
 		display: none;
+	}
+
+	.slick-prev::before,
+	.slick-next::before {
+		font-size: 4rem;
 	}
 	
 }

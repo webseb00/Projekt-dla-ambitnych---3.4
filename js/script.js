@@ -6,7 +6,15 @@ $(document).ready(function() {
 		dots: false,
 		infinite: true,
 		autoplay: true,
-		autoplaySpeed: 4000
+		autoplaySpeed: 4000,
+		responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				arrows: false
+			}
+		}
+		]
 	});
 
 	// mobile menu, overlay, hamburger icon
